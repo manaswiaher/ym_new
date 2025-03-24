@@ -141,11 +141,11 @@ header {
     border-bottom: 1px solid #29aae1; }
 
 .hero {
-  background-image: url(../images/new\ auto.png);
+  background-image: url(../images/yatri_mitra_banner.jpg);
   background-position: center;
  /* background-size: cover;
   background-repeat: no-repeat;*/
-  height: 150vh;
+/*  height: 150vh;*/
   transition: all;
   position: relative; }
   .hero h1 {
@@ -167,7 +167,7 @@ header {
   text-align: center; }
   .content_columns .content_box .content_hero {
     font-family: "roboto";
-    color: #fcb03a;
+    color: #fff;
         font-size: 3rem;
     position: relative;
     margin-bottom: 25px;
@@ -179,7 +179,7 @@ header {
       bottom: -12px;
       width: 45px;
       height: 3px;
-      background-color: #fcb03a;
+      background-color: #fff;
       border-radius: 1px;
       left: 50%;
       transform: translateX(-50%); }
@@ -416,7 +416,7 @@ footer .footer_second ul li a:hover, footer .footer_second ul li a:hover .fab, f
 @media screen and (max-width: 767px) {
   .content_columns .content_box .content_hero {
     font-family: "roboto";
-    color: #fcb03a;
+    color: #fff;
     font-size: 2rem;
     position: relative;
     margin-bottom: 25px;
