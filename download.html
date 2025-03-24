@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to Yatri Mitra</title>
+    <script src="Styles/js/bootstrap.bundle.min.js"></script>
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/images/icon/apple-touch-icon.png">
+    <link rel="mask-icon" href="assets/images/icon/safari-pinned-tab.svg" color="#e50000">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="description" content="" />
+    <link href="Styles/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="Styles/css/bootstrap-styles.css" rel="stylesheet" />
+    <link href="Styles/css/animate.min.css" rel="stylesheet" />
+    <link href="Styles/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="Styles/css/yatrimitra.css" />
+    <style type="text/css">
+      .share-btn{
+        font-size: 22px;
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 10px 35px;
+      }
+      .inner1 {
+    padding: 20px 10px;
+    
+    border-radius: 10px;
+    height: 100%;
+    background-color: #fff8ed;
+}
+.glass-card {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(12px);
+        border-radius: 20px;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4), inset -2px -2px 5px rgba(255, 255, 255, 0.2);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .glass-card:hover {
+        transform: scale(1.05);
+        box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.5), inset -3px -3px 6px rgba(255, 255, 255, 0.3);
+    }
+
+    /* Neumorphic QR Code */
+    .qr-container {
+        display: inline-block;
+        padding: 10px;
+        
+        border-radius: 15px;
+        
+    }
+
+    /* Modern Button */
+    .modern-btn {
+        display: inline-block;
+        padding: 12px 25px;
+        font-size: 18px;
+        font-weight: bold;
+        color: white;
+        background: linear-gradient(135deg, #ff9800, #ff5722);
+        border: none;
+        border-radius: 30px;
+        box-shadow: 4px 4px 10px rgba(255, 152, 0, 0.3);
+        transition: all 0.3s ease-in-out;
+        text-decoration: none;
+    }
+
+    .modern-btn:hover {
+        background: linear-gradient(135deg, #ff5722, #ff9800);
+        box-shadow: 6px 6px 15px rgba(255, 87, 34, 0.5);
+        transform: scale(1.05);
+    }
+
+    /* App Logo Styling */
+    .app-logo {
+        width: 40%;
+        border-radius: 15px;
+    }
+
+    /* Store Icons */
+    .store-icon {
+        width: 12%;
+        opacity: 0.8;
+        transition: opacity 0.3s ease;
+    }
+
+    .store-icon:hover {
+        opacity: 1;
+    }
+    </style>
+</head>
+<body>
+    <header>
+    <div class="inner container">
+        
+      <div class="logo"><img src="Styles/images/yatrimitra.jpg"></div>
+      
+      <nav>
+        <a  href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a class="active" href="download.html">Download</a>
+      </nav>
+      <label for="toggleMenu" class="fal fa-bars burger">
+            <input type="checkbox" name="name" value="" id="toggleMenu" />
+        </label>
+    </div>
+  </header>
+
+    <section class="content_columns py-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <!-- Passenger Card -->
+            <div class="col-md-4 col-12 mb-4">
+                <div class="inner1 text-center p-4 shadow-lg glass-card">
+                    <img src="Styles/images/yatri-mitra-app.png" class="img-fluid mb-3 app-logo" />
+                    <h4 class="cont-head text-dark fw-bold">Passenger</h4>
+                    
+                    <!-- QR Code with hover effect -->
+                    <div class="qr-container">
+                        <img src="Styles/images/qr.jpeg" class="img-fluid mb-3 qr-image" />
+                    </div>
+
+                    <!-- Download Button -->
+                    <a href="https://onelink.to/cgexnu" target="_blank" class="btn modern-btn">
+                        Download
+                    </a>
+                    
+                    <div class="mt-3 text-white">
+                        <span class="text-dark">Available on</span>
+                        <img src="Styles/images/android.svg" class="img-fluid mx-2 store-icon" />
+                        <img src="Styles/images/ios.png" class="img-fluid mx-2 store-icon" />
+                    </div>
+                </div>
+            </div>
+
+            <!-- Driver Card -->
+            <div class="col-md-4 col-12 mb-4">
+                <div class="inner1 text-center p-4 shadow-lg glass-card">
+                    <img src="Styles/images/yatri-mitra-driver.png" class="img-fluid mb-3 app-logo" />
+                    <h4 class="cont-head text-dark fw-bold">ड्राइवर</h4>
+
+                    <!-- QR Code with hover effect -->
+                    <div class="qr-container">
+                        <img src="Styles/images/qr-code.png" class="img-fluid mb-3 qr-image" />
+                    </div>
+
+                    <!-- Download Button -->
+                    <a href="https://play.google.com/store/apps/details?id=com.yatrimitra.driver&pcampaignid=web_share" target="_blank"
+                       class="btn modern-btn">
+                        Download
+                    </a>
+                    
+                    <div class="mt-3 text-white">
+                        <span class="text-dark">Available on</span>
+                        <img src="Styles/images/android.svg" class="img-fluid mx-2 store-icon" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    
+  <footer class="text-center">
+  <div class="footer_first">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-12">
+               <a href="index.html"> <img src="Styles/images/yatrimitra.jpg" class="w-50"></a>
+            </div>
+            <div class="col-md-4 col-12">
+                <h3 class="title_section">Quick Links
+      <span></span>
+    </h3>
+    <ul class="list_quick_link nav d-grid justify-content-center">
+      <li class="nav-item">
+        <a class="nav-link active" href="index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="about.html">About Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="download.html">Download</a>
+      </li>
+    </ul>
+            </div>
+            <div class="col-md-4 col-12">
+                <h3 class="title_section">Policies</h3>
+      <span></span>
+                <nav class="list_policies_link d-grid nav justify-content-center align-items-center">
+      <a class="nav-link" href="privacy-policy-yatri.html">Privacy Policy</a>
+      
+      <a class="nav-link" href="terms-conditions.html">Terms & Conditions</a>
+    
+      <a class="nav-link" href="refund-policy.html">Refund Policy</a> 
+    </nav>
+            </div>
+        </div>
+  </div>
+  </div>
+  <div class="text-muted">
+         Copyrights <span class="getYear">2025</span> Yatri Mitra. All Rights Reserved.
+    </div>
+</footer> 
+</body>
+</html>

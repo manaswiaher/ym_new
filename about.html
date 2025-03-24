@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to Yatri Mitra</title>
+    <script src="Styles/js/bootstrap.bundle.min.js"></script>
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/images/icon/apple-touch-icon.png">
+    <link rel="mask-icon" href="assets/images/icon/safari-pinned-tab.svg" color="#e50000">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="description" content="" />
+    <link href="Styles/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="Styles/css/bootstrap-styles.css" rel="stylesheet" />
+    <link href="Styles/css/animate.min.css" rel="stylesheet" />
+    <link href="Styles/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="Styles/css/yatrimitra.css" />
+    <style type="text/css">
+      .content_columns .row {
+    margin: 4.5rem 0;
+}
+.content_columns {
+        padding: 80px 0;
+        text-align: center;
+    }
+
+    /* Hero Section */
+    .education_section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 40px 0;
+    }
+
+    .img_box1 img {
+        border-radius: 12px;
+/*        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);*/
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .img_box1 img:hover {
+        transform: scale(1.05);
+    }
+
+    /* Contact Section */
+    .contact_section {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        padding-top: 50px;
+    }
+
+    .contact_card {
+        background: #ffffff;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        width: 320px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .contact_card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .cont-head {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #222;
+        margin-bottom: 10px;
+    }
+
+    .contact_section p a {
+        font-size: 1rem;
+        color: #555;
+        text-decoration: none;
+        transition: color 0.3s ease-in-out;
+    }
+
+    .contact_section p a:hover {
+        color: #ff6600;
+    }
+
+    @media (max-width: 768px) {
+        .education_section {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .content_box {
+            max-width: 100%;
+        }
+
+        .contact_section {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    </style>
+</head>
+<body>
+    <header>
+    <div class="inner container">
+        
+      <div class="logo"><img src="Styles/images/yatrimitra.jpg"></div>
+      
+      <nav>
+        <a href="index.html">Home</a>
+        <a class="active" href="about.html">About Us</a>
+        <a href="download.html">Download</a>
+        <!-- <a >Causes</a>
+        <a >Contact</a> -->
+      </nav>
+      <label for="toggleMenu" class="fal fa-bars burger">
+            <input type="checkbox" name="name" value="" id="toggleMenu" />
+        </label>
+    </div>
+  </header>
+  <section class="content_columns">
+    <div class="container">
+        <div class="education_section text-center">
+            <div class="img_box1 text-center">
+                <img src="../Yatri Mitra Website/Styles/images/mzpvtltd.jpg" width="500px" class="img-fluid "/>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="content_columns">
+    <div class="container">
+        <div class="contact_section">
+            <div class="contact_card">
+                <h4 class="cont-head">Head Office Address</h4>
+                <p class="fw-500">
+                    <a href="https://maps.app.goo.gl/Fujz6CoqHrv1hzuW6" target="_blank">
+                        A 406, Centrum Business Square, Thane, Maharashtra 400604
+                    </a>
+                </p>
+            </div>
+            <div class="contact_card">
+                <h4 class="cont-head">Phone No</h4>
+                <p class="fw-500">
+                    <a href="tel:9920130855">+91 8928755144</a>
+                </p>
+            </div>
+            <div class="contact_card">
+                <h4 class="cont-head">Email</h4>
+                <p class="fw-500">
+                    <a href="mailto:helpdesk@kaizeninfotech.com">support@yatrimitra.com</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+    
+ <footer class="text-center">
+  <div class="footer_first">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-12">
+                <a href="index.html"><img src="Styles/images/yatrimitra.jpg" class="w-50"></a>
+            </div>
+            <div class="col-md-4 col-12">
+                <h3 class="title_section">Quick Links
+      <span></span>
+    </h3>
+    <ul class="list_quick_link nav d-grid justify-content-center">
+      <li class="nav-item">
+        <a class="nav-link active" href="index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="about.html">About Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="download.html">Download</a>
+      </li>
+    </ul>
+            </div>
+            <div class="col-md-4 col-12">
+                <h3 class="title_section">Policies</h3>
+      <span></span>
+                <nav class="list_policies_link d-grid nav justify-content-center align-items-center">
+      <a class="nav-link" href="privacy-policy-yatri.html">Privacy Policy</a>
+      
+      <a class="nav-link" href="terms-conditions.html">Terms & Conditions</a>
+    
+      <a class="nav-link" href="refund-policy.html">Refund Policy</a> 
+    </nav>
+            </div>
+        </div>
+  </div>
+  </div>
+  <div class="text-muted">
+         Copyrights <span class="getYear">2025</span> Yatri Mitra. All Rights Reserved.
+    </div>
+</footer>  
+</body>
+</html>
